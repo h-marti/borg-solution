@@ -14,6 +14,8 @@
 
 This repository describes a procedure and a set of scripts to set up borg backup in a `main machine` <> `backup server` configuration.
 
+![architecture](docs/architecture.jpg)
+
 ## Setup
 
 ### Backup Server
@@ -45,10 +47,10 @@ In the directory `/backup` :
     - `/backup/config/backup_s.d`
 - In this directory, create the configurations for each backup category
     - Example : 
-        - \<category>.list -> list of files or directories to be backed up (full path to be described)
-        - \<category>.exclude.list -> list of files or directories not to be backed up (full path to be described)
-        - \<category>.sh -> script executed BEFORE the backup
-        - \<category>.cleanup.sh -> script executed AFTER the backup
+        - `<category>.list` -> list of files or directories to be backed up (full path to be described)
+        - `<category>.exclude.list` -> list of files or directories not to be backed up (full path to be described)
+        - `<category>.sh` -> script executed BEFORE the backup
+        - `<category>.cleanup.sh` -> script executed AFTER the backup
 - Don't forget to execute `chmod +x` .sh files
 
 ### Finalization
