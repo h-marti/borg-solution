@@ -1,5 +1,7 @@
 # BORG SOLUTION
 
+Original code by admins of singularity-node.net
+
 <!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
 
 - [Description](#description)
